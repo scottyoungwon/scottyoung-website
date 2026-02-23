@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EMISSARY — Gmail Noise Killer</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      background: #0a0a0a;
+      color: #f0f0f0;
+      min-height: 100vh;
+    }
+
+    header {
+      padding: 24px 40px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid #1a1a1a;
+    }
+
+    .logo {
+      font-size: 18px;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      color: #fff;
+    }
+
+    .logo span {
+      color: #22c55e;
+    }
+
+    nav a {
+      color: #888;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    nav a:hover { color: #fff; }
+
+    .hero {
+      max-width: 680px;
+      margin: 0 auto;
+      padding: 100px 40px 80px;
+      text-align: center;
+    }
+
+    .badge {
+      display: inline-block;
+      background: #111;
+      border: 1px solid #222;
+      border-radius: 100px;
+      padding: 6px 16px;
+      font-size: 12px;
+      color: #22c55e;
+      letter-spacing: 0.08em;
+      margin-bottom: 32px;
+    }
+
+    h1 {
+      font-size: clamp(36px, 6vw, 56px);
+      font-weight: 800;
+      line-height: 1.1;
+      letter-spacing: -0.02em;
+      margin-bottom: 24px;
+    }
+
+    h1 em {
+      font-style: normal;
+      color: #22c55e;
+    }
+
+    .subtitle {
+      font-size: 18px;
+      color: #888;
+      line-height: 1.6;
+      margin-bottom: 48px;
+    }
+
+    .cta-group {
+      display: flex;
+      gap: 12px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .btn-primary {
+      background: #22c55e;
+      color: #000;
+      font-weight: 700;
+      font-size: 15px;
+      padding: 14px 28px;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: opacity 0.15s;
+    }
+
+    .btn-primary:hover { opacity: 0.85; }
+
+    .btn-secondary {
+      background: #111;
+      color: #fff;
+      font-weight: 600;
+      font-size: 15px;
+      padding: 14px 28px;
+      border-radius: 8px;
+      text-decoration: none;
+      border: 1px solid #222;
+      transition: border-color 0.15s;
+    }
+
+    .btn-secondary:hover { border-color: #444; }
+
+    .how {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 80px 40px;
+    }
+
+    .how h2 {
+      text-align: center;
+      font-size: 28px;
+      font-weight: 700;
+      margin-bottom: 56px;
+      color: #fff;
+    }
+
+    .steps {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 32px;
+    }
+
+    .step {
+      text-align: center;
+    }
+
+    .step-num {
+      width: 40px;
+      height: 40px;
+      background: #111;
+      border: 1px solid #222;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 14px;
+      font-weight: 700;
+      color: #22c55e;
+      margin: 0 auto 16px;
+    }
+
+    .step h3 {
+      font-size: 16px;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+
+    .step p {
+      font-size: 14px;
+      color: #666;
+      line-height: 1.5;
+    }
+
+    .trust {
+      max-width: 680px;
+      margin: 0 auto;
+      padding: 0 40px 80px;
+    }
+
+    .trust-box {
+      background: #0f0f0f;
+      border: 1px solid #1a1a1a;
+      border-radius: 12px;
+      padding: 32px;
+      text-align: center;
+    }
+
+    .trust-box h2 {
+      font-size: 20px;
+      font-weight: 700;
+      margin-bottom: 16px;
+    }
+
+    .trust-box p {
+      font-size: 14px;
+      color: #666;
+      line-height: 1.7;
+    }
+
+    .trust-box p + p { margin-top: 12px; }
+
+    .trust-box a {
+      color: #22c55e;
+      text-decoration: none;
+    }
+
+    footer {
+      border-top: 1px solid #1a1a1a;
+      padding: 24px 40px;
+      text-align: center;
+      font-size: 13px;
+      color: #444;
+    }
+
+    footer a { color: #555; text-decoration: none; }
+    footer a:hover { color: #888; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">EMISS<span>A</span>RY</div>
+    <nav>
+      <a href="privacy/">Privacy Policy</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="badge">CHROME EXTENSION</div>
+    <h1>Your Gmail,<br><em>without the noise.</em></h1>
+    <p class="subtitle">
+      EMISSARY autonomously unsubscribes you from junk, blocks future senders,
+      and keeps your inbox clean — 24/7, without you lifting a finger.
+    </p>
+    <div class="cta-group">
+      <a href="https://chrome.google.com/webstore" class="btn-primary">Add to Chrome — Free</a>
+      <a href="privacy/" class="btn-secondary">Privacy Policy</a>
+    </div>
+  </section>
+
+  <section class="how">
+    <h2>How it works</h2>
+    <div class="steps">
+      <div class="step">
+        <div class="step-num">1</div>
+        <h3>Connect Gmail</h3>
+        <p>Install the extension and connect your Gmail account in one click.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <h3>Free scan</h3>
+        <p>EMISSARY scans your last 1,000 emails and shows you exactly what's been clogging your inbox.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <h3>Walk away</h3>
+        <p>The watchdog runs 24/7. New junk gets unsubscribed and blocked automatically — no work required.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="trust">
+    <div class="trust-box">
+      <h2>Your data stays yours.</h2>
+      <p>EMISSARY only reads sender names and subject lines — never the content of your emails. We never sell, share, or monetize your data. Zero.</p>
+      <p>Classification is done by AI using only sender + subject. Raw email bodies never leave your device.</p>
+      <p><a href="privacy/">Read our full privacy policy →</a></p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 EMISSARY &nbsp;·&nbsp; <a href="privacy/">Privacy Policy</a> &nbsp;·&nbsp; <a href="mailto:scott@scottyoung.co">Contact</a></p>
+  </footer>
+
+</body>
+</html>

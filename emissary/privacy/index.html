@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy — EMISSARY</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      background: #0a0a0a;
+      color: #f0f0f0;
+      min-height: 100vh;
+    }
+
+    header {
+      padding: 24px 40px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid #1a1a1a;
+    }
+
+    .logo {
+      font-size: 18px;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      color: #fff;
+      text-decoration: none;
+    }
+
+    .logo span { color: #22c55e; }
+
+    .content {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 64px 40px 100px;
+    }
+
+    h1 {
+      font-size: 36px;
+      font-weight: 800;
+      margin-bottom: 8px;
+    }
+
+    .updated {
+      font-size: 14px;
+      color: #555;
+      margin-bottom: 56px;
+    }
+
+    h2 {
+      font-size: 18px;
+      font-weight: 700;
+      margin: 40px 0 12px;
+      color: #fff;
+    }
+
+    p {
+      font-size: 15px;
+      color: #888;
+      line-height: 1.75;
+      margin-bottom: 12px;
+    }
+
+    ul {
+      margin: 0 0 12px 20px;
+    }
+
+    ul li {
+      font-size: 15px;
+      color: #888;
+      line-height: 1.75;
+      margin-bottom: 4px;
+    }
+
+    .highlight {
+      background: #0f0f0f;
+      border: 1px solid #1a1a1a;
+      border-left: 3px solid #22c55e;
+      border-radius: 4px;
+      padding: 16px 20px;
+      margin: 24px 0;
+    }
+
+    .highlight p {
+      margin: 0;
+      color: #ccc;
+    }
+
+    a { color: #22c55e; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    footer {
+      border-top: 1px solid #1a1a1a;
+      padding: 24px 40px;
+      text-align: center;
+      font-size: 13px;
+      color: #444;
+    }
+
+    footer a { color: #555; text-decoration: none; }
+    footer a:hover { color: #888; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <a href="../" class="logo">EMISS<span>A</span>RY</a>
+  </header>
+
+  <div class="content">
+    <h1>Privacy Policy</h1>
+    <p class="updated">Last updated: February 23, 2026</p>
+
+    <div class="highlight">
+      <p><strong>Short version:</strong> EMISSARY reads only sender names and email subject lines. We never read, store, or share the content of your emails. We never sell your data.</p>
+    </div>
+
+    <h2>What EMISSARY does</h2>
+    <p>EMISSARY is a Chrome extension that helps you unsubscribe from unwanted email senders and block future junk from reaching your inbox. It uses AI classification to identify marketing emails, newsletters, and spam based on sender information and subject lines only.</p>
+
+    <h2>What data we access</h2>
+    <p>To provide the service, EMISSARY accesses your Gmail account via the Gmail API. Specifically, we read:</p>
+    <ul>
+      <li><strong>Sender email address</strong> — to identify and classify who is sending you email</li>
+      <li><strong>Email subject line</strong> — to assist with classification accuracy</li>
+      <li><strong>List-Unsubscribe headers</strong> — to execute unsubscribe requests on your behalf</li>
+    </ul>
+    <p>We also use the Gmail API to:</p>
+    <ul>
+      <li>Send unsubscribe requests (mailto: unsubscribe)</li>
+      <li>Create Gmail filters to block future junk senders</li>
+      <li>Modify email labels when processing messages</li>
+    </ul>
+
+    <h2>What data we do NOT access</h2>
+    <p>EMISSARY never reads, stores, transmits, or processes:</p>
+    <ul>
+      <li>The body or content of your emails</li>
+      <li>Email attachments</li>
+      <li>Your contacts or address book</li>
+      <li>Any email content beyond sender and subject</li>
+    </ul>
+
+    <h2>How we use your data</h2>
+    <p>Sender addresses and subject lines are used solely to classify email as junk, legitimate, or uncertain. Classification is performed by an AI model (Anthropic Claude API). Only sender address and subject line are sent to the AI — never full email content.</p>
+    <p>Classification results are stored in a secure database associated with your Gmail address so that previously seen senders are not re-classified (reducing costs and improving speed).</p>
+
+    <h2>Data storage</h2>
+    <p>We store the following in our secure cloud database (Google Firestore):</p>
+    <ul>
+      <li>Your Gmail address (to associate your data)</li>
+      <li>Sender email addresses and their classifications (junk/keep)</li>
+      <li>Timestamps of when senders were classified</li>
+      <li>Watchdog configuration (on/off state)</li>
+    </ul>
+    <p>We do not store email subjects, email bodies, or any other email content in our database.</p>
+
+    <h2>Data sharing</h2>
+    <p>We do not sell, rent, or share your personal data with any third parties for advertising, marketing, or any other commercial purpose.</p>
+    <p>The only third-party service that receives any data is Anthropic (Claude AI API), which receives sender address and subject line only for classification purposes. Anthropic's privacy policy is available at <a href="https://www.anthropic.com/privacy" target="_blank">anthropic.com/privacy</a>.</p>
+
+    <h2>Data deletion</h2>
+    <p>You can request deletion of all your data at any time by emailing <a href="mailto:scott@scottyoung.co">scott@scottyoung.co</a>. We will delete all stored data associated with your Gmail address within 7 days of your request.</p>
+    <p>Uninstalling the Chrome extension stops all data processing. It does not automatically delete previously stored data — please contact us if you want your data removed.</p>
+
+    <h2>Security</h2>
+    <p>All data is transmitted over HTTPS. Access to your Gmail account requires explicit OAuth authorization, which you can revoke at any time via your <a href="https://myaccount.google.com/permissions" target="_blank">Google Account settings</a>. We use industry-standard security practices for all stored data.</p>
+
+    <h2>Children's privacy</h2>
+    <p>EMISSARY is not intended for use by children under 13. We do not knowingly collect data from children under 13.</p>
+
+    <h2>Changes to this policy</h2>
+    <p>If we make material changes to this privacy policy, we will update the date at the top of this page. Continued use of the extension after changes constitutes acceptance of the updated policy.</p>
+
+    <h2>Contact</h2>
+    <p>Questions about this privacy policy or your data? Email us at <a href="mailto:scott@scottyoung.co">scott@scottyoung.co</a>.</p>
+
+  </div>
+
+  <footer>
+    <p>&copy; 2026 EMISSARY &nbsp;·&nbsp; <a href="../">Home</a> &nbsp;·&nbsp; <a href="mailto:scott@scottyoung.co">Contact</a></p>
+  </footer>
+
+</body>
+</html>
