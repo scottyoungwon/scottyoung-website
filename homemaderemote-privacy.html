@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy — Homemade Remote</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500&family=DM+Mono&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --bg: #0a0a0a;
+    --surface: #111111;
+    --border: #1f1f1f;
+    --text: #e8e4dc;
+    --muted: #6b6460;
+    --accent: #f59e0b;
+  }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'DM Sans', system-ui, sans-serif;
+    font-size: 16px;
+    line-height: 1.7;
+    min-height: 100vh;
+  }
+
+  nav {
+    padding: 20px 40px;
+    border-bottom: 1px solid var(--border);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .nav-logo {
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--text);
+    text-decoration: none;
+    letter-spacing: -0.02em;
+  }
+
+  .nav-logo span { color: var(--accent); }
+
+  .nav-back {
+    font-size: 13px;
+    color: var(--muted);
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+
+  .nav-back:hover { color: var(--text); }
+
+  main {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 80px 40px 120px;
+  }
+
+  .page-label {
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 20px;
+  }
+
+  h1 {
+    font-size: clamp(28px, 4vw, 38px);
+    font-weight: 500;
+    letter-spacing: -0.03em;
+    line-height: 1.2;
+    margin-bottom: 12px;
+  }
+
+  .updated {
+    font-size: 13px;
+    color: var(--muted);
+    margin-bottom: 60px;
+    font-family: 'DM Mono', monospace;
+  }
+
+  .tldr {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-left: 3px solid var(--accent);
+    border-radius: 8px;
+    padding: 24px 28px;
+    margin-bottom: 60px;
+  }
+
+  .tldr-label {
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 10px;
+  }
+
+  .tldr p {
+    font-size: 15px;
+    color: var(--text);
+    line-height: 1.6;
+  }
+
+  section {
+    margin-bottom: 48px;
+  }
+
+  h2 {
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: -0.02em;
+    margin-bottom: 16px;
+    color: var(--text);
+    padding-bottom: 12px;
+    border-bottom: 1px solid var(--border);
+  }
+
+  p {
+    font-size: 15px;
+    color: #b5b0a8;
+    margin-bottom: 14px;
+    line-height: 1.75;
+  }
+
+  p:last-child { margin-bottom: 0; }
+
+  ul {
+    margin: 12px 0 14px 0;
+    padding-left: 20px;
+  }
+
+  li {
+    font-size: 15px;
+    color: #b5b0a8;
+    margin-bottom: 8px;
+    line-height: 1.65;
+  }
+
+  strong {
+    color: var(--text);
+    font-weight: 500;
+  }
+
+  a {
+    color: var(--accent);
+    text-decoration: none;
+  }
+
+  a:hover { text-decoration: underline; }
+
+  .zero-data-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(245, 158, 11, 0.08);
+    border: 1px solid rgba(245, 158, 11, 0.2);
+    border-radius: 100px;
+    padding: 6px 14px;
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--accent);
+    margin-bottom: 32px;
+    letter-spacing: 0.02em;
+  }
+
+  .zero-data-badge::before {
+    content: '';
+    width: 6px;
+    height: 6px;
+    background: var(--accent);
+    border-radius: 50%;
+  }
+
+  footer {
+    padding: 32px 40px;
+    border-top: 1px solid var(--border);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .footer-copy {
+    font-size: 13px;
+    color: var(--muted);
+  }
+
+  .footer-links {
+    display: flex;
+    gap: 24px;
+  }
+
+  .footer-links a {
+    font-size: 13px;
+    color: var(--muted);
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+
+  .footer-links a:hover { color: var(--text); }
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="/" class="nav-logo">Homemade<span>Remote</span></a>
+  <a href="/" class="nav-back">← Back</a>
+</nav>
+
+<main>
+  <div class="page-label">Legal</div>
+  <h1>Privacy Policy</h1>
+  <p class="updated">Last updated: February 25, 2026</p>
+
+  <div class="zero-data-badge">No data collected — ever</div>
+
+  <div class="tldr">
+    <div class="tldr-label">Plain English Summary</div>
+    <p>Homemade Remote collects <strong>nothing</strong>. Every command from your iPhone goes directly to your Mac over your local WiFi network. No data touches our servers — we don't have any. No accounts. No tracking. No analytics. This app is physically incapable of sending your data anywhere except your own Mac.</p>
+  </div>
+
+  <section>
+    <h2>1. Who We Are</h2>
+    <p>Homemade Remote is developed and operated by Scott Young ("we," "us," or "our"), an independent developer. You can reach us at <a href="mailto:privacy@scottyoung.co">privacy@scottyoung.co</a>.</p>
+  </section>
+
+  <section>
+    <h2>2. What We Collect</h2>
+    <p><strong>Nothing.</strong></p>
+    <p>Homemade Remote operates entirely on your local network. When you use the app:</p>
+    <ul>
+      <li>Commands from your iPhone are sent directly to your Mac over local WiFi</li>
+      <li>No command, gesture, keystroke, or interaction is transmitted to us or any third party</li>
+      <li>No user account is created or required</li>
+      <li>No email address, name, or personal information is collected at any point</li>
+      <li>No usage data, crash reports, or analytics are collected</li>
+      <li>No cookies are set by this app or this website</li>
+    </ul>
+    <p>The app has no network access beyond your local WiFi. It cannot phone home. There is no home to phone.</p>
+  </section>
+
+  <section>
+    <h2>3. The Mac Companion App & Accessibility Permission</h2>
+    <p>The Mac companion app requires <strong>Accessibility permission</strong> in macOS System Settings. This permission allows the app to control your cursor, keyboard input, and media playback on your Mac in response to commands from your iPhone.</p>
+    <p>This permission is:</p>
+    <ul>
+      <li>Used solely to execute local control commands received over your WiFi network</li>
+      <li>Never used to record your screen, log keystrokes, or access any data on your Mac</li>
+      <li>Fully revocable at any time in System Settings → Privacy & Security → Accessibility</li>
+    </ul>
+    <p>We do not have remote access to your Mac. The Accessibility permission is exercised only when your iPhone sends a command over your local network — never autonomously, never remotely.</p>
+  </section>
+
+  <section>
+    <h2>4. This Website</h2>
+    <p>The homemaderemote.com website is a static page hosted on GitHub Pages. It does not:</p>
+    <ul>
+      <li>Use cookies or tracking pixels</li>
+      <li>Load third-party analytics scripts</li>
+      <li>Collect any visitor information</li>
+      <li>Store server-side logs accessible to us</li>
+    </ul>
+    <p>GitHub Pages may collect standard server logs (IP addresses, page requests) as part of their infrastructure. Their privacy practices are governed by <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" target="_blank">GitHub's Privacy Statement</a>.</p>
+  </section>
+
+  <section>
+    <h2>5. Third-Party Services</h2>
+    <p>The iOS app and Mac companion app do not integrate with any third-party analytics, advertising, or data collection services. There are no SDKs in the app that collect data.</p>
+    <p>The iOS app is distributed through Apple's App Store. Apple's data practices on the App Store are governed by <a href="https://www.apple.com/legal/privacy/" target="_blank">Apple's Privacy Policy</a>.</p>
+  </section>
+
+  <section>
+    <h2>6. Data Retention</h2>
+    <p>We retain no data about you because we collect none. There is nothing to delete, export, or access.</p>
+    <p>If you uninstall the iOS app and/or Mac companion app, there are no accounts to deactivate and no server-side data to remove.</p>
+  </section>
+
+  <section>
+    <h2>7. Your Rights (GDPR & CCPA)</h2>
+    <p>If you are located in the European Economic Area or California, you have rights over your personal data — including the right to access, correct, and delete it. Because we collect no personal data, there is nothing for us to provide, correct, or delete.</p>
+    <p>If you have any questions or believe we have inadvertently collected data, contact us at <a href="mailto:privacy@scottyoung.co">privacy@scottyoung.co</a> and we will respond within 7 days.</p>
+  </section>
+
+  <section>
+    <h2>8. Children</h2>
+    <p>Homemade Remote is not directed at children under 13 and does not knowingly collect information from anyone. As we collect no data from any user, we are compliant with COPPA by design.</p>
+  </section>
+
+  <section>
+    <h2>9. Changes to This Policy</h2>
+    <p>If we ever change our data practices — for example, if a future version adds optional analytics — we will update this policy, bump the version date at the top of this page, and (if the change is material) notify users through an in-app notice.</p>
+    <p>The current version was last updated on February 25, 2026. Our position: we will never sell, rent, or share your data with anyone, under any circumstances.</p>
+  </section>
+
+  <section>
+    <h2>10. Contact</h2>
+    <p>Questions, requests, or concerns about this privacy policy:</p>
+    <p><strong>Email:</strong> <a href="mailto:privacy@scottyoung.co">privacy@scottyoung.co</a><br>
+    <strong>Developer:</strong> Scott Young, independent developer</p>
+  </section>
+</main>
+
+<footer>
+  <span class="footer-copy">© 2026 Homemade Remote</span>
+  <div class="footer-links">
+    <a href="/homemaderemote-privacy.html">Privacy</a>
+    <a href="/homemaderemote-terms.html">Terms</a>
+    <a href="/">Home</a>
+  </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Terms of Service — Homemade Remote</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500&family=DM+Mono&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --bg: #0a0a0a;
+    --surface: #111111;
+    --border: #1f1f1f;
+    --text: #e8e4dc;
+    --muted: #6b6460;
+    --accent: #f59e0b;
+  }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'DM Sans', system-ui, sans-serif;
+    font-size: 16px;
+    line-height: 1.7;
+    min-height: 100vh;
+  }
+
+  nav {
+    padding: 20px 40px;
+    border-bottom: 1px solid var(--border);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .nav-logo {
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--text);
+    text-decoration: none;
+    letter-spacing: -0.02em;
+  }
+
+  .nav-logo span { color: var(--accent); }
+
+  .nav-back {
+    font-size: 13px;
+    color: var(--muted);
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+
+  .nav-back:hover { color: var(--text); }
+
+  main {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 80px 40px 120px;
+  }
+
+  .page-label {
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 20px;
+  }
+
+  h1 {
+    font-size: clamp(28px, 4vw, 38px);
+    font-weight: 500;
+    letter-spacing: -0.03em;
+    line-height: 1.2;
+    margin-bottom: 12px;
+  }
+
+  .updated {
+    font-size: 13px;
+    color: var(--muted);
+    margin-bottom: 60px;
+    font-family: 'DM Mono', monospace;
+  }
+
+  .tldr {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-left: 3px solid var(--accent);
+    border-radius: 8px;
+    padding: 24px 28px;
+    margin-bottom: 60px;
+  }
+
+  .tldr-label {
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 10px;
+  }
+
+  .tldr p {
+    font-size: 15px;
+    color: var(--text);
+    line-height: 1.6;
+  }
+
+  section {
+    margin-bottom: 48px;
+  }
+
+  h2 {
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: -0.02em;
+    margin-bottom: 16px;
+    color: var(--text);
+    padding-bottom: 12px;
+    border-bottom: 1px solid var(--border);
+  }
+
+  p {
+    font-size: 15px;
+    color: #b5b0a8;
+    margin-bottom: 14px;
+    line-height: 1.75;
+  }
+
+  p:last-child { margin-bottom: 0; }
+
+  ul {
+    margin: 12px 0 14px 0;
+    padding-left: 20px;
+  }
+
+  li {
+    font-size: 15px;
+    color: #b5b0a8;
+    margin-bottom: 8px;
+    line-height: 1.65;
+  }
+
+  strong {
+    color: var(--text);
+    font-weight: 500;
+  }
+
+  a {
+    color: var(--accent);
+    text-decoration: none;
+  }
+
+  a:hover { text-decoration: underline; }
+
+  .caps {
+    font-size: 14px;
+    color: #b5b0a8;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 16px 20px;
+    margin: 12px 0 14px;
+    line-height: 1.65;
+  }
+
+  footer {
+    padding: 32px 40px;
+    border-top: 1px solid var(--border);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .footer-copy {
+    font-size: 13px;
+    color: var(--muted);
+  }
+
+  .footer-links {
+    display: flex;
+    gap: 24px;
+  }
+
+  .footer-links a {
+    font-size: 13px;
+    color: var(--muted);
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+
+  .footer-links a:hover { color: var(--text); }
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="/" class="nav-logo">Homemade<span>Remote</span></a>
+  <a href="/" class="nav-back">← Back</a>
+</nav>
+
+<main>
+  <div class="page-label">Legal</div>
+  <h1>Terms of Service</h1>
+  <p class="updated">Last updated: February 25, 2026 · Version 1.0</p>
+
+  <div class="tldr">
+    <div class="tldr-label">Plain English Summary</div>
+    <p>This is a free app. You use it, you own the outcome. We built it to work — but we make no guarantees and accept no liability beyond what the law requires. By downloading or using Homemade Remote, you're agreeing to these terms. If you don't agree, don't use it.</p>
+  </div>
+
+  <section>
+    <h2>1. Acceptance of Terms</h2>
+    <p>By downloading, installing, or using Homemade Remote (the iOS app or Mac companion app), you agree to be bound by these Terms of Service. If you do not agree to these terms, you must not download or use the software.</p>
+    <p>These terms constitute a binding legal agreement between you and Scott Young, the independent developer of Homemade Remote ("we," "us," or "our").</p>
+    <p><strong>By using the app, you confirm that you have read, understood, and accepted these terms.</strong> This constitutes a clickwrap agreement.</p>
+  </section>
+
+  <section>
+    <h2>2. What Homemade Remote Does</h2>
+    <p>Homemade Remote allows you to control your Mac computer from your iPhone over a local WiFi network. The iOS app sends control signals (cursor movement, keystrokes, media commands) to the Mac companion app, which executes them on your Mac using macOS system APIs.</p>
+    <p>The app operates <strong>entirely on your local network</strong>. No data is transmitted to us or any third party. No internet connection is required after installation.</p>
+  </section>
+
+  <section>
+    <h2>3. License</h2>
+    <p>We grant you a personal, non-exclusive, non-transferable, revocable license to use Homemade Remote for personal, non-commercial purposes on devices you own or control.</p>
+    <p>You may not:</p>
+    <ul>
+      <li>Reverse engineer, decompile, or disassemble the software</li>
+      <li>Distribute, sublicense, sell, or rent the software to any third party</li>
+      <li>Use the software to build a competing product</li>
+      <li>Remove or alter any proprietary notices in the software</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>4. Mac Accessibility Permission & Assumption of Risk</h2>
+    <p>The Mac companion app requires <strong>Accessibility permission</strong> in macOS to function. This permission allows the app to simulate mouse movement, keyboard input, and media key presses on your Mac.</p>
+    <p>By granting this permission and using the app, you acknowledge and accept that:</p>
+    <ul>
+      <li>The app will control your Mac's cursor, keyboard, and media playback as directed by your iPhone</li>
+      <li>Commands are executed as if performed by you directly on your Mac</li>
+      <li>Any action taken on your Mac through the app is your action and your responsibility</li>
+      <li>We are not liable for accidental inputs, unintended keystrokes, or any consequence of remote control operations</li>
+      <li>You assume full responsibility for ensuring the app is used only on Macs you own or have explicit permission to control</li>
+    </ul>
+    <p><strong>You must only use this app to control computers you own or have explicit authorization to control.</strong> Unauthorized use of this technology to access or control another person's computer without consent may violate applicable laws, including the Computer Fraud and Abuse Act (CFAA) and similar statutes.</p>
+  </section>
+
+  <section>
+    <h2>5. Disclaimer of Warranties</h2>
+    <div class="caps">
+      HOMEMADE REMOTE IS PROVIDED "AS IS" AND "AS AVAILABLE" WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED. TO THE FULLEST EXTENT PERMITTED BY APPLICABLE LAW, WE DISCLAIM ALL WARRANTIES, INCLUDING BUT NOT LIMITED TO IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, NON-INFRINGEMENT, AND ANY WARRANTIES ARISING FROM COURSE OF DEALING OR USAGE OF TRADE.
+    </div>
+    <p>We do not warrant that the app will function without interruption, that all features will work on all system configurations, or that any defects will be corrected. The app is a free personal project — we will do our best to maintain it, but we make no commitments about uptime, updates, or continued support.</p>
+  </section>
+
+  <section>
+    <h2>6. Limitation of Liability</h2>
+    <div class="caps">
+      TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, IN NO EVENT SHALL WE BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, PUNITIVE, OR EXEMPLARY DAMAGES — INCLUDING BUT NOT LIMITED TO LOSS OF DATA, LOSS OF PROFITS, DAMAGE TO PROPERTY, OR PERSONAL INJURY — ARISING OUT OF OR RELATED TO YOUR USE OF HOMEMADE REMOTE, EVEN IF WE HAVE BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
+    </div>
+    <p>Our total aggregate liability to you for any claim arising out of or related to these terms or the app shall not exceed <strong>$10 USD</strong>.</p>
+    <p>Some jurisdictions do not allow limitation of liability for certain types of damages. In those jurisdictions, our liability is limited to the maximum extent permitted by law.</p>
+  </section>
+
+  <section>
+    <h2>7. Indemnification</h2>
+    <p>You agree to defend, indemnify, and hold harmless Scott Young and any affiliates from and against any claims, damages, losses, liabilities, costs, and expenses (including reasonable attorneys' fees) arising out of or related to:</p>
+    <ul>
+      <li>Your use of or misuse of Homemade Remote</li>
+      <li>Your violation of these Terms of Service</li>
+      <li>Your violation of any applicable law or regulation</li>
+      <li>Any claim by a third party arising from your use of the app to control a computer</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>8. Dispute Resolution & Binding Arbitration</h2>
+    <p><strong>Informal Resolution First.</strong> If you have a dispute with us, contact <a href="mailto:privacy@scottyoung.co">privacy@scottyoung.co</a> first. We'll make a genuine effort to resolve it within 30 days.</p>
+    <p><strong>Binding Arbitration.</strong> If informal resolution fails, any dispute, claim, or controversy arising out of or relating to these terms or the app shall be settled by binding individual arbitration administered by the American Arbitration Association (AAA) under its Consumer Arbitration Rules. The arbitration will be conducted in English. Judgment on the arbitration award may be entered in any court with jurisdiction.</p>
+    <p><strong>Class Action Waiver.</strong> You waive your right to participate in any class action lawsuit or class-wide arbitration. All disputes must be brought on an individual basis only.</p>
+    <p><strong>Exception.</strong> Either party may seek injunctive or other equitable relief in a court of competent jurisdiction for claims involving intellectual property rights or unauthorized access to computer systems.</p>
+  </section>
+
+  <section>
+    <h2>9. Third-Party Services</h2>
+    <p>The iOS app is distributed through Apple's App Store. Your download and use of the app is also subject to <a href="https://www.apple.com/legal/internet-services/itunes/us/terms.html" target="_blank">Apple's Terms and Conditions</a>. Apple is not a party to these terms and bears no responsibility for Homemade Remote.</p>
+    <p>The Mac companion app is distributed via homemaderemote.com, hosted on GitHub Pages. GitHub's terms apply to the hosting infrastructure, not to the app itself.</p>
+  </section>
+
+  <section>
+    <h2>10. Termination</h2>
+    <p>We reserve the right to discontinue Homemade Remote at any time without notice. Your license to use the app terminates automatically if you violate any provision of these terms.</p>
+    <p>Upon termination, you must stop using the app and delete all copies from your devices. Sections 5, 6, 7, and 8 survive termination.</p>
+  </section>
+
+  <section>
+    <h2>11. Governing Law</h2>
+    <p>These terms are governed by the laws of the State of California, United States, without regard to conflict of law principles. To the extent any dispute is not subject to arbitration, you consent to the exclusive jurisdiction of the courts located in California.</p>
+  </section>
+
+  <section>
+    <h2>12. Severability</h2>
+    <p>If any provision of these terms is held invalid, illegal, or unenforceable, the remaining provisions will continue in full force and effect. The invalid provision will be modified to the minimum extent necessary to make it enforceable while preserving the intent of the original provision.</p>
+  </section>
+
+  <section>
+    <h2>13. Changes to These Terms</h2>
+    <p>We may update these terms from time to time. Material changes will be indicated by a new version number and updated date at the top of this page. Continued use of the app after changes constitutes acceptance of the new terms. If you disagree with updated terms, stop using the app.</p>
+  </section>
+
+  <section>
+    <h2>14. Contact</h2>
+    <p>Questions about these terms:</p>
+    <p><strong>Email:</strong> <a href="mailto:privacy@scottyoung.co">privacy@scottyoung.co</a><br>
+    <strong>Developer:</strong> Scott Young, independent developer</p>
+  </section>
+</main>
+
+<footer>
+  <span class="footer-copy">© 2026 Homemade Remote</span>
+  <div class="footer-links">
+    <a href="/homemaderemote-privacy.html">Privacy</a>
+    <a href="/homemaderemote-terms.html">Terms</a>
+    <a href="/">Home</a>
+  </div>
+</footer>
+
+</body>
+</html>
