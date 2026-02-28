@@ -29,9 +29,7 @@
       color: #fff;
     }
 
-    .logo span {
-      color: #c9a84c;
-    }
+    .logo span { color: #a8bfd8; }
 
     nav a {
       color: #71717a;
@@ -44,7 +42,7 @@
     .hero {
       max-width: 680px;
       margin: 0 auto;
-      padding: 100px 40px 80px;
+      padding: 72px 40px 56px;
       text-align: center;
     }
 
@@ -55,9 +53,9 @@
       border-radius: 100px;
       padding: 6px 16px;
       font-size: 12px;
-      color: #c9a84c;
+      color: #a8bfd8;
       letter-spacing: 0.08em;
-      margin-bottom: 32px;
+      margin-bottom: 28px;
     }
 
     h1 {
@@ -65,19 +63,19 @@
       font-weight: 800;
       line-height: 1.1;
       letter-spacing: -0.02em;
-      margin-bottom: 24px;
+      margin-bottom: 20px;
     }
 
     h1 em {
       font-style: normal;
-      color: #c9a84c;
+      color: #a8bfd8;
     }
 
     .subtitle {
       font-size: 18px;
       color: #71717a;
       line-height: 1.6;
-      margin-bottom: 48px;
+      margin-bottom: 36px;
     }
 
     .cta-group {
@@ -85,6 +83,7 @@
       gap: 12px;
       justify-content: center;
       flex-wrap: wrap;
+      margin-bottom: 10px;
     }
 
     .btn-primary {
@@ -114,17 +113,91 @@
 
     .btn-secondary:hover { border-color: #3f3f46; }
 
+    .pricing-note {
+      font-size: 13px;
+      color: #3f3f46;
+      margin-bottom: 44px;
+    }
+
+    /* Mock damage report */
+    .damage-report {
+      background: #0d0d14;
+      border: 1px solid #1e1e2e;
+      border-radius: 10px;
+      overflow: hidden;
+      text-align: left;
+      max-width: 460px;
+      margin: 0 auto;
+    }
+
+    .report-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 11px 16px;
+      border-bottom: 1px solid #1e1e2e;
+      background: #111118;
+    }
+
+    .report-label {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      color: #a8bfd8;
+    }
+
+    .report-meta {
+      font-size: 11px;
+      color: #52525b;
+    }
+
+    .report-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 9px 16px;
+      border-bottom: 1px solid #13131c;
+    }
+
+    .report-row:last-of-type { border-bottom: none; }
+
+    .report-row .sender {
+      font-family: 'SF Mono', 'Fira Code', monospace;
+      font-size: 12px;
+      color: #71717a;
+    }
+
+    .nuke-badge {
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      color: #a8bfd8;
+      background: #0f1820;
+      border: 1px solid #1e2d3d;
+      border-radius: 3px;
+      padding: 2px 7px;
+    }
+
+    .report-footer {
+      padding: 9px 16px;
+      font-size: 12px;
+      color: #3f3f46;
+      text-align: center;
+      border-top: 1px solid #1e1e2e;
+    }
+
+    /* How it works */
     .how {
       max-width: 800px;
       margin: 0 auto;
-      padding: 80px 40px;
+      padding: 60px 40px;
     }
 
     .how h2 {
       text-align: center;
       font-size: 28px;
       font-weight: 700;
-      margin-bottom: 56px;
+      margin-bottom: 48px;
       color: #fff;
     }
 
@@ -134,9 +207,7 @@
       gap: 32px;
     }
 
-    .step {
-      text-align: center;
-    }
+    .step { text-align: center; }
 
     .step-num {
       width: 40px;
@@ -149,7 +220,7 @@
       justify-content: center;
       font-size: 14px;
       font-weight: 700;
-      color: #c9a84c;
+      color: #a8bfd8;
       margin: 0 auto 16px;
     }
 
@@ -166,10 +237,11 @@
       line-height: 1.5;
     }
 
+    /* Trust box */
     .trust {
       max-width: 680px;
       margin: 0 auto;
-      padding: 0 40px 80px;
+      padding: 0 40px 60px;
     }
 
     .trust-box {
@@ -196,7 +268,7 @@
     .trust-box p + p { margin-top: 12px; }
 
     .trust-box a {
-      color: #c9a84c;
+      color: #a8bfd8;
       text-decoration: none;
     }
 
@@ -224,14 +296,38 @@
 
   <section class="hero">
     <div class="badge">CHROME EXTENSION</div>
-    <h1>Your Gmail,<br><em>without the noise.</em></h1>
+    <h1>We don't hide junk.<br><em>We kill the source.</em></h1>
     <p class="subtitle">
-      EMISSARY autonomously unsubscribes you from junk, blocks future senders,
-      and keeps your inbox clean — 24/7, without you lifting a finger.
+      EMISSARY unsubscribes you from every junk sender in your inbox and blocks them permanently — no tabs, no filters, no manual work.
     </p>
     <div class="cta-group">
       <a href="https://chrome.google.com/webstore" class="btn-primary">Add to Chrome — Free</a>
       <a href="privacy/" class="btn-secondary">Privacy Policy</a>
+    </div>
+    <p class="pricing-note">Free scan &nbsp;·&nbsp; $3/month after</p>
+
+    <div class="damage-report">
+      <div class="report-header">
+        <span class="report-label">SCAN COMPLETE</span>
+        <span class="report-meta">1,000 emails &nbsp;·&nbsp; 108 junk senders found</span>
+      </div>
+      <div class="report-row">
+        <span class="sender">marketing@retailco.com</span>
+        <span class="nuke-badge">NUKE</span>
+      </div>
+      <div class="report-row">
+        <span class="sender">deals@shopnow.io</span>
+        <span class="nuke-badge">NUKE</span>
+      </div>
+      <div class="report-row">
+        <span class="sender">newsletter@techdigest.net</span>
+        <span class="nuke-badge">NUKE</span>
+      </div>
+      <div class="report-row">
+        <span class="sender">updates@promo-blast.com</span>
+        <span class="nuke-badge">NUKE</span>
+      </div>
+      <div class="report-footer">+ 104 more senders queued for elimination</div>
     </div>
   </section>
 
@@ -246,12 +342,12 @@
       <div class="step">
         <div class="step-num">2</div>
         <h3>Free scan</h3>
-        <p>EMISSARY scans your inbox and shows you exactly what's been clogging it — free on first use.</p>
+        <p>EMISSARY scans your last 1,000 emails and shows you the damage — exactly how many junk senders are poisoning your inbox.</p>
       </div>
       <div class="step">
         <div class="step-num">3</div>
         <h3>Walk away</h3>
-        <p>The watchdog runs 24/7. New junk gets unsubscribed and blocked automatically — no work required.</p>
+        <p>EMISSARY keeps watch. New junk senders get blocked before they settle in — your inbox stays clean without you touching it.</p>
       </div>
     </div>
   </section>
